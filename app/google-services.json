@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1090642228157",
+    "project_id": "michelpatty20411110-uas-mc",
+    "storage_bucket": "michelpatty20411110-uas-mc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090642228157:android:30d6e29bb7bd80a60f98d4",
+        "android_client_info": {
+          "package_name": "com.example.michelpatty_20411110_projectakhir"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD3gvZ-TpVSO52nrmgJdQ6jsOyZ772Aao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

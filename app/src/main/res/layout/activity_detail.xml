@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="445dp"
+        android:orientation="vertical"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back_icon"
+            android:layout_margin="15dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DUNIA"
+                    android:textSize="26dp"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PLAYLIST"
+                    android:textSize="22dp"
+                    android:fontFamily="serif-monospace"
+                    android:textStyle="bold"
+                    android:textColor="@color/white2"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/_imgDetail"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/_judulDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="65dp"
+            android:text="Judul"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textSize="25dp"/>
+<!--            <ImageView-->
+<!--                android:id="@+id/_favoritDetail"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/favorite_icon"-->
+<!--                android:layout_marginLeft="140dp"-->
+<!--                android:layout_marginTop="10dp"/>-->
+            <TextView
+                android:id="@+id/_artisDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="67dp"
+                android:text="Artis"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textSize="17sp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg3"
+        android:padding="10dp">
+
+<!-- lagu1 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/black">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="10dp">
+
+            <ImageButton
+                android:id="@+id/_imglagu1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/theweeknd"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/_judullagu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white2"
+                android:text="Album"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/_artislagu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Weeknd"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:background="@color/white"
+            android:layout_marginLeft="26dp"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/pre"
+                android:layout_width="20dp"
+                android:layout_height="23dp"
+                android:background="@color/black"
+                android:src="@drawable/previous_icon"/>
+
+            <ImageButton
+                android:id="@+id/play1"
+                android:layout_width="65dp"
+                android:layout_height="23dp"
+                android:background="@color/black"
+                android:src="@drawable/play_icon"/>
+
+            <ImageButton
+                android:id="@+id/next"
+                android:layout_width="20dp"
+                android:layout_height="23dp"
+                android:background="@color/black"
+                android:src="@drawable/next_icon"/>
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seekbar1"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:progress="50"
+            android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+<!-- lagu2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/black">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/_imglagu2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/theweeknd"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/_judullagu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white2"
+                android:text="Album"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/_artislagu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Weeknd"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:background="@color/white"
+            android:layout_marginLeft="26dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/pre2"
+                android:layout_width="20dp"
+                android:layout_height="23dp"
+                android:background="@color/black"
+                android:src="@drawable/previous_icon"/>
+
+            <ImageButton
+                android:id="@+id/play2"
+                android:layout_width="65dp"
+                android:layout_height="23dp"
+                android:background="@color/black"
+                android:src="@drawable/play_icon"/>
+
+            <ImageButton
+                android:id="@+id/next2"
+                android:layout_width="20dp"
+                android:layout_height="23dp"
+                android:background="@color/black"
+                android:src="@drawable/next_icon"/>
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seekbar2"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:progress="50"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+        <!-- lagu3 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/black">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/_imglagu3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/theweeknd"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/_judullagu3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white2"
+                android:text="Album"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/_artislagu3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Weeknd"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:background="@color/white"
+                android:layout_marginLeft="26dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <ImageButton
+                    android:id="@+id/pre3"
+                    android:layout_width="20dp"
+                    android:layout_height="23dp"
+                    android:background="@color/black"
+                    android:src="@drawable/previous_icon"/>
+
+                <ImageButton
+                    android:id="@+id/play3"
+                    android:layout_width="65dp"
+                    android:layout_height="23dp"
+                    android:background="@color/black"
+                    android:src="@drawable/play_icon"/>
+
+                <ImageButton
+                    android:id="@+id/next3"
+                    android:layout_width="20dp"
+                    android:layout_height="23dp"
+                    android:background="@color/black"
+                    android:src="@drawable/next_icon"/>
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/seekbar3"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:progress="50"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</LinearLayout>
